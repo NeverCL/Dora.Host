@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Handle\BaseHandle.cs" />
-    <Compile Include="Handle\CameraHandle.cs" />
+    <Compile Include="Handle\Camera\CameraHandle.cs" />
     <Compile Include="Handle\Context.cs" />
     <Compile Include="Handle\HandleType.cs" />
     <Compile Include="Handle\IHandle.cs" />
@@ -67,8 +67,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Handle\Camera\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

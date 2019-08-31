@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Dora.Agent.Handle;
+using Dora.Agent.Handle.Camera;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Dora.Agent.Tests
@@ -8,9 +10,9 @@ namespace Dora.Agent.Tests
     public class CameraHandleTests
     {
         [TestMethod]
-        public void TestReceive()
+        public async Task TestReceive()
         {
-            new CameraHandle().ReceiveAsync(new Context { Data = 0 });
+            await new CameraHandle().ReceiveAsync(new Context { Data = 0 });
         }
     }
 }
