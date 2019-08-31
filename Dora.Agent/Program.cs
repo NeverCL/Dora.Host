@@ -14,6 +14,7 @@ namespace Dora.Agent
     {
         static void Main(string[] args)
         {
+            new Server().Start();
         }
     }
 }

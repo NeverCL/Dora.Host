@@ -8,6 +8,7 @@ namespace Dora.Agent.Handle
 {
     public class Context
     {
+        public Guid Id { get; set; }
         public HandleType HandleType { get; set; }
         public object Data { get; set; }
     }
