@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Agent", "Dora.Agent\Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Agent.Tests", "Dora.Agent.Tests\Dora.Agent.Tests.csproj", "{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Host.Server", "Dora.Host.Server\Dora.Host.Server.csproj", "{41681A46-772A-440D-A330-F51784046C23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Host.Core", "Dora.Host.Core\Dora.Host.Core.csproj", "{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41681A46-772A-440D-A330-F51784046C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41681A46-772A-440D-A330-F51784046C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41681A46-772A-440D-A330-F51784046C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41681A46-772A-440D-A330-F51784046C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

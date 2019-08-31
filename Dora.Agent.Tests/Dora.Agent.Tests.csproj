@@ -61,6 +61,10 @@
       <Project>{c141fbdd-6caa-43be-9e96-6a12e26fb074}</Project>
       <Name>Dora.Agent</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Dora.Host.Core\Dora.Host.Core.csproj">
+      <Project>{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}</Project>
+      <Name>Dora.Host.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,7 @@
 ﻿using Dora.Agent.Handle;
 using Dora.Agent.Handle.Camera;
 using Dora.Agent.Handle.Win32;
+using Dora.Host.Core.Message;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 using System;
@@ -11,20 +12,21 @@ namespace Dora.Agent
 {
     internal class Server : BaseHandle
     {
-        private static string SubscribeChannel;
-        private const string PublushChannel = "Dora.Server";
-        private const string RedisConnection = "wdora.com";
-        private ConnectionMultiplexer redis;
-        private ISubscriber sub;
-        private IDatabase db;
+        private readonly IMessage message;
+
+        public Server() : this(new Messenger(MessengerType.Agent))
+        {
+
+        }
+
+        public Server(IMessage message)
+        {
+            this.message = message;
+        }
 
         internal void Start()
         {
-            SubscribeChannel = $"Dora.Agent.{Guid.NewGuid()}";
-            redis = ConnectionMultiplexer.Connect(RedisConnection);
-            db = redis.GetDatabase();
-            sub = redis.GetSubscriber();
-            sub.Subscribe(SubscribeChannel, (c, msg) =>
+            message.SubscribeAsync((c, msg) =>
             {
                 var context = JsonConvert.DeserializeObject<Context>(msg);
                 ReceiveAsync(context);
@@ -34,7 +36,7 @@ namespace Dora.Agent
         public override async Task SendAsync(Context context)
         {
             var msg = JsonConvert.SerializeObject(context);
-            await sub.PublishAsync(PublushChannel, msg);
+            await message.PublishAsync(msg);
         }
 
         public override async Task ReceiveAsync(Context context)

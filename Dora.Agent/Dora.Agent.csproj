@@ -94,8 +94,6 @@
   <ItemGroup>
     <Compile Include="Handle\BaseHandle.cs" />
     <Compile Include="Handle\Camera\CameraHandle.cs" />
-    <Compile Include="Handle\Context.cs" />
-    <Compile Include="Handle\HandleType.cs" />
     <Compile Include="Handle\IHandle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +105,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Dora.Host.Core\Dora.Host.Core.csproj">
+      <Project>{214d7d96-eca5-4299-8d80-0a2ca1ff7c39}</Project>
+      <Name>Dora.Host.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

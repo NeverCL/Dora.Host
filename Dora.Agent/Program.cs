@@ -1,5 +1,6 @@
 ﻿using AForge.Video;
 using AForge.Video.DirectShow;
+using Dora.Host.Core.Message;
 using System;
 using System.Collections.Generic;
 using System.Linq;
