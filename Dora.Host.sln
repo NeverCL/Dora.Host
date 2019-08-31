@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Agent", "Dora.Agent\Dora.Agent.csproj", "{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Agent.Tests", "Dora.Agent.Tests\Dora.Agent.Tests.csproj", "{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32E879CF-F6D6-4D88-BB01-CA0965E60E90}
+	EndGlobalSection
+EndGlobal
