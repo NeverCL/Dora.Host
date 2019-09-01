@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dora.Agent.Handle
 {
-    public interface IHandle
+    public interface IAgentHandle
     {
         /// <summary>
         /// 发送数据到Server

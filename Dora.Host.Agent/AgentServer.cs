@@ -1,47 +1,44 @@
 ﻿using Dora.Agent.Handle;
-using Dora.Agent.Handle.Camera;
-using Dora.Agent.Handle.Win32;
+using Dora.Host.Agent.Handle.Camera;
+using Dora.Host.Agent.Handle.Win32;
+using Dora.Host.Core.Agent;
 using Dora.Host.Core.Message;
-using Newtonsoft.Json;
-using StackExchange.Redis;
 using System;
-using System.Threading;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace Dora.Agent
+namespace Dora.Host.Agent
 {
-    internal class Server : BaseHandle
+    public class AgentServer : BaseHandle
     {
-        private readonly IMessage message;
+        private readonly AgentMessenger message;
 
-        public Server() : this(new Messenger(MessengerType.Agent))
+        public AgentServer() : this(AgentMessenger.Instance)
         {
 
         }
 
-        public Server(IMessage message)
+        public AgentServer(AgentMessenger message)
         {
             this.message = message;
         }
 
-        internal void Start()
+        internal async Task Start()
         {
-            message.SubscribeAsync((c, msg) =>
-            {
-                var context = JsonConvert.DeserializeObject<Context>(msg);
-                ReceiveAsync(context);
-            });
+            await message.SubscribeAsync(async context => await ReceiveAsync(context));
+            await SendAsync(new Context { MessageType = MessageType.Agent, FromChannel = AgentMessenger.AgentChannel });
         }
 
         public override async Task SendAsync(Context context)
         {
-            var msg = JsonConvert.SerializeObject(context);
-            await message.PublishAsync(msg);
+            await message.PublishAsync(context);
         }
 
         public override async Task ReceiveAsync(Context context)
         {
-            IHandle handle;
+            IAgentHandle handle;
             switch (context.HandleType)
             {
                 case HandleType.Win32_CloseScreen:

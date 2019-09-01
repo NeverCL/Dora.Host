@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dora.Host.Core.Message;
+using System;
 
 namespace Dora.Host.Server
 {
@@ -6,7 +7,10 @@ namespace Dora.Host.Server
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Starting!");
+            ServerMessenger.Instance.Start();
+            Console.WriteLine("Started!");
+            Console.ReadLine();
         }
     }
 }

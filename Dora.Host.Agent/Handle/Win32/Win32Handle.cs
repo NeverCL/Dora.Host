@@ -1,11 +1,13 @@
-﻿using Dora.Agent.Util;
+﻿using Dora.Agent.Handle;
+using Dora.Agent.Util;
+using Dora.Host.Core.Agent;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dora.Agent.Handle.Win32
+namespace Dora.Host.Agent.Handle.Win32
 {
     public class Win32Handle : BaseHandle
     {

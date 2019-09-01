@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Agent", "Dora.Agent\Dora.Agent.csproj", "{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dora.Host.Server", "Dora.Host.Server\Dora.Host.Server.csproj", "{41681A46-772A-440D-A330-F51784046C23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Agent.Tests", "Dora.Agent.Tests\Dora.Agent.Tests.csproj", "{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dora.Host.Core", "Dora.Host.Core\Dora.Host.Core.csproj", "{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Host.Server", "Dora.Host.Server\Dora.Host.Server.csproj", "{41681A46-772A-440D-A330-F51784046C23}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Host.Agent", "Dora.Host.Agent\Dora.Host.Agent.csproj", "{D6E6E3C8-671D-4689-8A03-0E782BEA5132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Host.Core", "Dora.Host.Core\Dora.Host.Core.csproj", "{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dora.Host.Client", "Dora.Host.Client\Dora.Host.Client.csproj", "{026B68B8-61AA-4BCF-9403-F5BCBD90854F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C141FBDD-6CAA-43BE-9E96-6A12E26FB074}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55EA8D70-A5FD-4C90-832B-64C19DC23A9D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41681A46-772A-440D-A330-F51784046C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41681A46-772A-440D-A330-F51784046C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41681A46-772A-440D-A330-F51784046C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +25,14 @@ Global
 		{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{214D7D96-ECA5-4299-8D80-0A2CA1FF7C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E6E3C8-671D-4689-8A03-0E782BEA5132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E6E3C8-671D-4689-8A03-0E782BEA5132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E6E3C8-671D-4689-8A03-0E782BEA5132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E6E3C8-671D-4689-8A03-0E782BEA5132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026B68B8-61AA-4BCF-9403-F5BCBD90854F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026B68B8-61AA-4BCF-9403-F5BCBD90854F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026B68B8-61AA-4BCF-9403-F5BCBD90854F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026B68B8-61AA-4BCF-9403-F5BCBD90854F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

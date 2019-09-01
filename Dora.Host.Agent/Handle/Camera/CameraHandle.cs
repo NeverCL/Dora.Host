@@ -1,5 +1,7 @@
 ﻿using AForge.Video;
 using AForge.Video.DirectShow;
+using Dora.Agent.Handle;
+using Dora.Host.Core.Agent;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -8,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Dora.Agent.Handle.Camera
+namespace Dora.Host.Agent.Handle.Camera
 {
     public class CameraHandle : BaseHandle
     {
